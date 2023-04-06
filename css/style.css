@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box
+}
+
+body{
+  background-image: url(fon.jpg);
+  background-size: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+*,
+*:before,
+*:after{
+  *box-sizing: border-box;
+}
+p{
+  
+}
+*/
+
+.main{
+   display: flex
+} 
+  
+
+.imeg{
+width: 400px;
+margin-top: 0px;
+margin-left: 0px;
+padding: 20px;
+background-color: #e6eca1;
+box-shadow: 0 5px 5px #ccc;
+border-radius: 2px;
+}
+
+.photo{
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  resize: 300px;
+  border-radius: 50%; 
+  
+}
+
+.title{
+  color: #4e3468;
+  font-size: 30px;
+
+}
+
+.kont{
+  padding-left: 20px
+  list-style-position: inside;
+  font-size: 18px;
+  color: #4e3468;
+    }
+
+    ul{
+      list-style:none;
+    }
+
+.sidbar{
+  display: bloc;
+  margin: 0 auto
+  font-size: 20p;
+  color: #4e3468;
+  line-height: 1.5
+  
+}
+
+/*html, body {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}*/
+
+.container {
+  align-items: center;
+  border-radius: 8px;
+  background-color: #D50000;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  width: 700px;
+  z-index: 1;
+}
+
+.link {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  color: #FFF;
+  cursor: pointer;
+  height: 70px;
+  margin: 0 10px 0 0;
+  position: relative;
+  transition: all .3s ease;
+  width: 70px;
+}
+.link svg {
+  fill: #FFF;
+  height: 40%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .3s ease;
+  width: 40%;
+}
+.link::after {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 0;
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .6s ease;
+  width: 0;
+  z-index: -1;
+}
+
+.link:hover {
+  background-color: #FFF;
+}
+.link:hover::after {
+  height: 1000px;
+  width: 1000px;
+}
+
+.link.html5::after {
+  background-color: #E34F26;
+}
+.link.html5:hover svg {
+  fill: #E34F26;
+}
+.link.css3::after {
+  background-color: #1572b6;
+}
+.link.css3:hover svg {
+  fill: #1572b6;
+}
+.link.javascript::after {
+  background-color: #F7DF1E;
+}
+.link.javascript:hover svg {
+  fill: #F7DF1E;
+}
+.link.github::after {
+  background-color: #181717;
+}
+.link.github:hover svg {
+  fill: #181717;
+}
